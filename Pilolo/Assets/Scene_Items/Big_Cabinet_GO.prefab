@@ -210,6 +210,10 @@ PrefabInstance:
       propertyPath: animator
       value: 
       objectReference: {fileID: 2404591024306233826}
+    - target: {fileID: 530713537931449830, guid: fb94e5ebcc6dfe541ba8369700c56274, type: 3}
+      propertyPath: interactKey
+      value: 102
+      objectReference: {fileID: 0}
     - target: {fileID: 530713537931449831, guid: fb94e5ebcc6dfe541ba8369700c56274, type: 3}
       propertyPath: m_Name
       value: GameObject

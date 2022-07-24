@@ -46,11 +46,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isInRange: 0
-  interactKey: 0
+  isOpen: 0
+  isDoor: 0
+  animator: {fileID: 0}
+  interactKey: 102
   interactAction:
     m_PersistentCalls:
       m_Calls: []
-  radius: 3
 --- !u!61 &6573504182864816523
 BoxCollider2D:
   m_ObjectHideFlags: 0
