@@ -1,8 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Mirror;
 
-public class Player_movement : MonoBehaviour
+public class Player_movement : NetworkBehaviour
 {
 
     public float moveSpeed;
@@ -13,10 +14,9 @@ public class Player_movement : MonoBehaviour
 
     Vector2 movement;
 
-    // Update is called once per frame
-    void Update()
-    {
-        //Sets x and y axis
+    void HandleMovement(){
+        if(isLocalPlayer){
+         //Sets x and y axis
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
         //Sets the animtaions
@@ -26,8 +26,17 @@ public class Player_movement : MonoBehaviour
         }
        
         animator.SetFloat("Speed", movement.sqrMagnitude);
+        //Interactibles              
+        }
+    }
 
-        //Interactibles      
+
+    // Update is called once per frame
+    void Update()
+    {
+
+        HandleMovement();
+
     }
 
     void FixedUpdate()
