@@ -20,8 +20,11 @@ public class Player_movement : MonoBehaviour
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
         //Sets the animtaions
-        animator.SetFloat("Horizontal", movement.x);
-        animator.SetFloat("Vertical", movement.y);
+        if(movement != Vector2.zero){
+             animator.SetFloat("Horizontal", movement.x);
+             animator.SetFloat("Vertical", movement.y);
+        }
+       
         animator.SetFloat("Speed", movement.sqrMagnitude);
 
         //Interactibles      

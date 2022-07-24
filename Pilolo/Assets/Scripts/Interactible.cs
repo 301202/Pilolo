@@ -7,6 +7,7 @@ public class Interactible : MonoBehaviour
 {
     public bool isInRange;
     public bool isOpen;
+    public bool isDoor;
     public Animator animator;
     public KeyCode interactKey;
     public UnityEvent interactAction;
@@ -40,6 +41,9 @@ public class Interactible : MonoBehaviour
     }
     public void OpenCabinet(){
         if(isOpen == false){
+            if(isDoor == true){
+                
+            }
             isOpen = true;
             Debug.Log("Chest Open");
             animator.SetBool("IsOpen", isOpen);
