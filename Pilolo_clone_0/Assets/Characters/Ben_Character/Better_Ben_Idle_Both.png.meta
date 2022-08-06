@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 77389c393df173b41a994754856b01bd
+guid: a55b048d1dbc0af499ce58a9c4c78df7
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -116,7 +116,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Ben_1_0
+      name: Better_Ben_Idle_Both_0
       rect:
         serializedVersion: 2
         x: 0
@@ -130,14 +130,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b9d2d2743855c3041843988922991cdb
-      internalID: -2061421461
+      spriteID: b60b0ab6b77e17d40befb3c2ff67c806
+      internalID: -516711589
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ben_1_1
+      name: Better_Ben_Idle_Both_1
       rect:
         serializedVersion: 2
         x: 16
@@ -151,50 +151,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 374184cf1e368154d8bc39f50ccde02c
-      internalID: 598534487
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Ben_1_2
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 253f9b7ebb0c7de4986a065f748823bc
-      internalID: -1824001533
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Ben_1_3
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cd399c816fdb9c14e9f48977abf58578
-      internalID: 100288166
+      spriteID: c74e46a94fbe7ec45b10f4463adc0fbc
+      internalID: -1035681494
       vertices: []
       indices: 
       edges: []
@@ -210,10 +168,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Ben_1_2: -1824001533
-      Ben_1_1: 598534487
-      Ben_1_3: 100288166
-      Ben_1_0: -2061421461
+      Better_Ben_Idle_Both_0: -516711589
+      Better_Ben_Idle_Both_1: -1035681494
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

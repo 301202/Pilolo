@@ -2,11 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using Mirror;
 
-public class Interactible : MonoBehaviour
+public class Interactible : NetworkBehaviour
 {
     public bool isInRange;
     public bool isOpen;
+    public bool isDoor;
     public Animator animator;
     public KeyCode interactKey;
     public UnityEvent interactAction;
@@ -40,6 +42,9 @@ public class Interactible : MonoBehaviour
     }
     public void OpenCabinet(){
         if(isOpen == false){
+            if(isDoor == true){
+                
+            }
             isOpen = true;
             Debug.Log("Chest Open");
             animator.SetBool("IsOpen", isOpen);

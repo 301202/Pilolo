@@ -3324,6 +3324,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isInRange: 0
   isOpen: 0
+  isDoor: 0
   animator: {fileID: 0}
   interactKey: 102
   interactAction:

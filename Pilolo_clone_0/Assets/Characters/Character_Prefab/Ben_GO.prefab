@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 3848144491570695513}
   - component: {fileID: 3848144491570695515}
   - component: {fileID: 3848144491570695516}
-  - component: {fileID: 252270904557474958}
   m_Layer: 0
   m_Name: Ben_GO
   m_TagString: Untagged
@@ -78,12 +77,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 598534487, guid: 77389c393df173b41a994754856b01bd, type: 3}
+  m_Sprite: {fileID: 1140376059, guid: 206dda3561ab06a448be580375085ac4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.16, y: 0.16}
+  m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -161,20 +160,3 @@ CapsuleCollider2D:
   m_Offset: {x: 0.0034103096, y: -0.43519768}
   m_Size: {x: 0.26557678, y: 0.27849203}
   m_Direction: 0
---- !u!114 &252270904557474958
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3848144491570695462}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9b91ecbcc199f4492b9a91e820070131, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sceneId: 0
-  serverOnly: 0
-  visible: 0
-  m_AssetId: ceaa8a5b7b0d83140b5dc8e68060cd3d
-  hasSpawned: 0
