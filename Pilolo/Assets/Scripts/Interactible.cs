@@ -27,6 +27,10 @@ public class Interactible : NetworkBehaviour
                 OpenCabinet();                
             }
         }    
+
+        if(Input.GetKeyDown(KeyCode.Space)){
+            Close();
+        }
         
     }
 
@@ -42,7 +46,6 @@ public class Interactible : NetworkBehaviour
     {
          if(collision.gameObject.CompareTag("Player")){
             isInRange = false;
-            Close();
             Debug.Log("Player is not in range");
         }
     }
