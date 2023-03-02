@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 
@@ -19,6 +17,10 @@ public class Player_movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(DialogManager.isActive == true){
+            return;
+        }
+
         //Sets x and y axis
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");

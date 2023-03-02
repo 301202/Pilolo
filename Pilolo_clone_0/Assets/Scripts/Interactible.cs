@@ -2,9 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
-using Mirror;
 
-public class Interactible : NetworkBehaviour
+public class Interactible : MonoBehaviour
 {
     public bool isInRange;
     public bool isOpen;
@@ -24,6 +23,7 @@ public class Interactible : NetworkBehaviour
             }
         } 
     }
+    //
 
     private void OnTriggerEnter2D(Collider2D collision) {
         if(collision.gameObject.CompareTag("Player")){

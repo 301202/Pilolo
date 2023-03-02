@@ -2,23 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
-using Mirror;
-using TMPro;
 
-public class Interactible : NetworkBehaviour
+public class Interactible : MonoBehaviour
 {
-   
     public bool isInRange;
     public bool isOpen;
     public bool isDoor;
-    public bool isStickhere;
-    public string popUp;
-    public GameObject popUpBox;
-    public Animator popUpAnimator;
-    public TMP_Text popUpText;
     public Animator animator;
-    
-   
     public KeyCode interactKey;
     public UnityEvent interactAction;
     void Update(){
@@ -27,12 +17,13 @@ public class Interactible : NetworkBehaviour
                 OpenCabinet();                
             }
         }    
-
-        if(Input.GetKeyDown(KeyCode.Space)){
-            Close();
-        }
-        
+        if(isInRange){
+            if(Input.GetKeyDown(KeyCode.E)){
+                CloseCabinet();                
+            }
+        } 
     }
+    //
 
     private void OnTriggerEnter2D(Collider2D collision) {
         if(collision.gameObject.CompareTag("Player")){
@@ -57,27 +48,14 @@ public class Interactible : NetworkBehaviour
             isOpen = true;
             Debug.Log("Chest Open");
             animator.SetBool("IsOpen", isOpen);
-            
-            if(isStickhere == hasStick){
-                isStickhere = hasStick;
-                Debug.Log("You have found a stick");
-                Pop(popUp);
-            }
         }
     }
-   
-    bool hasStick{
-        get {return (Random.value > 0.5f );}
-    }
 
-     public void Pop(string text){
-        popUpBox.SetActive(true);
-        popUpText.text = text;
-        popUpAnimator.SetTrigger("pop");
+    public void CloseCabinet(){
+        if(isOpen == true){
+            isOpen = false;
+            Debug.Log("Chest closed");
+            animator.SetBool("IsOpen", isOpen);
+        }
     }
-
-    public void Close(){
-        popUpBox.SetActive(false);
-        popUpAnimator.SetTrigger("close");
-    }    
 }
